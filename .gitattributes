@@ -1,0 +1,7 @@
+* text=auto
+*.sh text eol=lf
+*.py text eol=lf
+*.bat text eol=crlf
+*.md text eol=lf
+*.txt text eol=lf
+castlevania_ptbr.patch binary

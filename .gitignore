@@ -1,0 +1,9 @@
+# nunca versionar arquivos do jogo (copyright)
+alldata.bin
+alldata.psb.m
+*.orig
+# lixo
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
