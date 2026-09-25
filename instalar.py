@@ -27,27 +27,29 @@ def sha1_file(path, limit=None):
 
 def parse_patch():
     raw = lzma.decompress(open(PATCH, "rb").read())
-    if raw[:8] != b"CVDOMPT1":
+    if raw[:8] != b"CVDOMPT2":
         raise SystemExit("Arquivo de patch invalido ou corrompido.")
     p = 8
-    sha_o = raw[p:p+20].hex(); p += 20
-    len_o = struct.unpack_from("<Q", raw, p)[0]; p += 8
     sha_n = raw[p:p+20].hex(); p += 20
     len_n = struct.unpack_from("<Q", raw, p)[0]; p += 8
+    nb = struct.unpack_from("<I", raw, p)[0]; p += 4
+    bases = {}   # sha1 -> (tamanho, nome): versoes a partir das quais da para instalar
+    for _ in range(nb):
+        sha = raw[p:p+20].hex(); p += 20
+        ln, nl = struct.unpack_from("<QB", raw, p); p += 9
+        bases[sha] = (ln, raw[p:p+nl].decode()); p += nl
     nseg = struct.unpack_from("<I", raw, p)[0]; p += 4
     meta = []
     for _ in range(nseg):
         off, ln = struct.unpack_from("<QQ", raw, p); p += 16
         meta.append((off, ln))
-    msha_o = raw[p:p+20].hex(); p += 20
     msha_n = raw[p:p+20].hex(); p += 20
     mlen = struct.unpack_from("<I", raw, p)[0]; p += 4
     segs = []
     for off, ln in meta:
         segs.append((off, raw[p:p+ln])); p += ln
     mdata = raw[p:p+mlen]; p += mlen
-    return dict(sha_o=sha_o, len_o=len_o, sha_n=sha_n, len_n=len_n,
-                segs=segs, msha_o=msha_o, msha_n=msha_n, mdata=mdata)
+    return dict(sha_n=sha_n, len_n=len_n, bases=bases, segs=segs, msha_n=msha_n, mdata=mdata)
 
 def _safe_isdir(p):
     try: return os.path.isdir(p)
@@ -116,17 +118,17 @@ def apply(windata, pd):
     log("Verificando arquivos originais...")
     cur = sha1_file(binp)
     if cur == pd["sha_n"]:
-        log(">> A traducao JA esta instalada. Nada a fazer."); return True
-    if cur != pd["sha_o"]:
+        log(">> Esta versao da traducao JA esta instalada. Nada a fazer."); return True
+    if cur not in pd["bases"]:
         log("!! O 'alldata.bin' nao corresponde a versao esperada do jogo.")
         log("   SHA-1 encontrado: %s" % cur)
-        log("   SHA-1 esperado:   %s" % pd["sha_o"])
         log("   Use 'Verificar integridade dos arquivos' no Steam e tente de novo.")
         return False
-    log("OK. Aplicando traducao (in-place, sem duplicar o arquivo)...")
+    log("OK (%s). Aplicando traducao (in-place, sem duplicar o arquivo)..." % pd["bases"][cur][1])
     with open(binp, "r+b") as f:
         for off, data in pd["segs"]:
             f.seek(off); f.write(data)
+        f.truncate(pd["len_n"])
     with open(mp, "wb") as f:
         f.write(pd["mdata"])
     log("Verificando resultado...")

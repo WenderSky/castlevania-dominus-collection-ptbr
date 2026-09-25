@@ -15,9 +15,21 @@ ERROS (typos, sentido um pouco diferente, espacamentos imperfeitos).
 Nao e um trabalho profissional/oficial. Achou um erro? Abra uma issue
 no GitHub que eu corrijo em versoes futuras.
 
-Versao: 1.0
+Versao: 1.1
 Traducao por: Wender_sky (Steam)
 Plataforma do jogo: Steam (PC e Steam Deck)
+
+----------------------------------------------------------------
+ NOVIDADES DA v1.1
+----------------------------------------------------------------
+- Termos padronizados entre os tres jogos (mesmo termo = mesma
+  traducao em OoE, DoS e PoR). Sempre a forma mais curta, para
+  nada vazar das caixas de texto.
+- Order of Ecclesia: menus que tinham ficado em ingles traduzidos
+  (status, botoes, som, registros).
+- Portrait of Ruin: rotulos e estados da tela de status traduzidos.
+- Correcao tecnica no indice do DoS e do OoE.
+- Instala sobre o jogo original ou por cima da v1.0.
 
 ----------------------------------------------------------------
  COMO A TRADUCAO FUNCIONA
@@ -33,7 +45,8 @@ titulos das musicas ficam no original, de proposito.
  REQUISITOS
 ----------------------------------------------------------------
 - O jogo "Castlevania Dominus Collection" instalado pela Steam,
-  na versao original (sem outras modificacoes).
+  na versao original (sem outras modificacoes) OU com a v1.0
+  desta traducao (o instalador atualiza direto).
 - O instalador precisa do Python 3:
     * Steam Deck / Linux: ja vem instalado (python3).
     * Windows: se nao tiver, baixe em https://www.python.org/downloads/

@@ -5,7 +5,7 @@
 <p align="center">
   <img alt="Idioma" src="https://img.shields.io/badge/idioma-Portugu%C3%AAs%20(BR)-009c3b">
   <img alt="Plataforma" src="https://img.shields.io/badge/plataforma-PC%20%2B%20Steam%20Deck-1b2838">
-  <img alt="Versão" src="https://img.shields.io/badge/vers%C3%A3o-1.0-8b0000">
+  <img alt="Versão" src="https://img.shields.io/badge/vers%C3%A3o-1.1-8b0000">
   <img alt="Uso" src="https://img.shields.io/badge/uso-n%C3%A3o--comercial-important">
 </p>
 
@@ -21,13 +21,24 @@ A tradução ocupa o **slot do idioma Espanhol** do jogo. Depois de instalar, ba
 
 ---
 
+## 🆕 Novidades da v1.1
+
+- 🔤 **Termos padronizados entre os três jogos** — o mesmo termo em inglês agora tem a mesma tradução em OoE, DoS e PoR (ex.: *Lorde Sombrio*, *Pensão dos Demônios*, *Laboratório de Magia*, *Dados salvos*, *console*).
+- 🧭 **Order of Ecclesia:** menus que tinham ficado em inglês agora estão em português (tela de status, configuração de botões, som, registros).
+- 📊 **Portrait of Ruin:** rótulos de status (*PRÓX, OURO, TEMPO, TAXA*) e estados (*VENENO, MALDIÇÃO, PEDRA*) traduzidos, como já estavam no DoS.
+- ✂️ Sempre que dois jogos divergiam, ficou a forma **mais curta**, para nada vazar das caixas de texto.
+- 🛠️ **Correção técnica:** o índice da v1.0 guardava o tamanho antigo do texto do DoS e do OoE; agora os três estão com o tamanho exato.
+- 📦 O instalador aceita o jogo **original ou com a v1.0** instalada.
+
+---
+
 ## 🎮 O que foi traduzido
 
 | Jogo | Frases traduzidas | Cobertura do texto jogável |
 |------|:---:|:---:|
-| **Castlevania: Order of Ecclesia** | 1.494 | ✅ 100% |
-| **Castlevania: Dawn of Sorrow** | 1.016 | ✅ 100% |
-| **Castlevania: Portrait of Ruin** | 1.529 | ✅ 100% |
+| **Castlevania: Order of Ecclesia** | 1.517 | ✅ 100% |
+| **Castlevania: Dawn of Sorrow** | 1.015 | ✅ 100% |
+| **Castlevania: Portrait of Ruin** | 1.537 | ✅ 100% |
 
 Isso inclui, em cada jogo:
 
@@ -76,7 +87,7 @@ Foram **~4.000 frases** traduzidas e conferidas ao longo do processo.
 
 ## 💾 Instalação
 
-> **Requisitos:** o jogo *Castlevania Dominus Collection* instalado pela **Steam**, na versão original (sem outros mods). O instalador usa **Python 3** — no **Steam Deck / Linux** já vem instalado; no **Windows**, se não tiver, baixe em [python.org/downloads](https://www.python.org/downloads/) marcando *"Add Python to PATH"*.
+> **Requisitos:** o jogo *Castlevania Dominus Collection* instalado pela **Steam**, na versão original (sem outros mods) **ou com a v1.0 desta tradução** — o instalador atualiza direto, sem precisar reverter antes. O instalador usa **Python 3** — no **Steam Deck / Linux** já vem instalado; no **Windows**, se não tiver, baixe em [python.org/downloads](https://www.python.org/downloads/) marcando *"Add Python to PATH"*.
 
 ### 🪟 Windows
 
