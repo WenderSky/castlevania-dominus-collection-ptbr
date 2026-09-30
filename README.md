@@ -1,11 +1,11 @@
 # 🩸 Castlevania: Dominus Collection — Tradução PT-BR
 
-> Tradução **não-oficial** para **Português do Brasil** dos três Castlevania de Nintendo DS presentes na *Castlevania Dominus Collection* (Steam).
+> Tradução **não-oficial** para **Português do Brasil** dos três Castlevania de Nintendo DS presentes na *Castlevania Dominus Collection* (Steam) — e, desde a v1.2, do **menu da própria coleção**.
 
 <p align="center">
   <img alt="Idioma" src="https://img.shields.io/badge/idioma-Portugu%C3%AAs%20(BR)-009c3b">
   <img alt="Plataforma" src="https://img.shields.io/badge/plataforma-PC%20%2B%20Steam%20Deck-1b2838">
-  <img alt="Versão" src="https://img.shields.io/badge/vers%C3%A3o-1.1-8b0000">
+  <img alt="Versão" src="https://img.shields.io/badge/vers%C3%A3o-1.2-8b0000">
   <img alt="Uso" src="https://img.shields.io/badge/uso-n%C3%A3o--comercial-important">
 </p>
 
@@ -15,20 +15,28 @@
 
 A **Castlevania Dominus Collection** reúne os clássicos de Nintendo DS da série. Esta tradução leva **todo o texto jogável** dos três jogos DS para o português do Brasil — história, diálogos, itens, equipamentos, bestiário, magias, menus, loja, missões e biblioteca.
 
-A tradução ocupa o **slot do idioma Espanhol** do jogo. Depois de instalar, basta escolher, dentro do jogo, a **European Version** e o idioma **Español** — o texto aparece em português. Nada mais no jogo é alterado.
+A tradução dos jogos ocupa o **slot do idioma Espanhol**. Depois de instalar, o **menu da coleção já abre em português**; em cada jogo, escolha a **Versão Português BR** (antiga *European Version*) e o idioma **Español** — o texto aparece em português.
 
 > ⚠️ **Aviso:** esta é uma **tradução amadora**, feita por um fã, e **pode conter erros** — typos, trechos com sentido ligeiramente diferente do original, quebras de linha ou espaçamentos imperfeitos em alguma caixa de diálogo. Não é um trabalho profissional/oficial. Se encontrar algum erro, fique à vontade para abrir uma [*issue*](../../issues) que eu corrijo em versões futuras. 🙂
 
 ---
 
-## 🆕 Novidades da v1.1
+## 🆕 Novidades da v1.2
+
+- 🏰 **Menu da coleção traduzido** — abas (Jogar, Extra, Galeria, Música, Opções), configurações, guia de botões, avisos, save, nomes das áreas e conquistas.
+- 🏷️ A **European Version** agora se chama **Versão Português BR** na tela de escolha de versão.
+- 📚 **Enciclopédia dos três jogos** em português, com os mesmos nomes e descrições usados dentro de cada jogo.
+- 🏆 **Conquistas** (nomes e descrições) traduzidas.
+- ✍️ Créditos da tradução na tela de título e no menu principal.
+- 📦 O instalador atualiza direto a partir do jogo **original, da v1.0 ou da v1.1**.
+
+## Novidades da v1.1
 
 - 🔤 **Termos padronizados entre os três jogos** — o mesmo termo em inglês agora tem a mesma tradução em OoE, DoS e PoR (ex.: *Lorde Sombrio*, *Pensão dos Demônios*, *Laboratório de Magia*, *Dados salvos*, *console*).
 - 🧭 **Order of Ecclesia:** menus que tinham ficado em inglês agora estão em português (tela de status, configuração de botões, som, registros).
 - 📊 **Portrait of Ruin:** rótulos de status (*PRÓX, OURO, TEMPO, TAXA*) e estados (*VENENO, MALDIÇÃO, PEDRA*) traduzidos, como já estavam no DoS.
 - ✂️ Sempre que dois jogos divergiam, ficou a forma **mais curta**, para nada vazar das caixas de texto.
 - 🛠️ **Correção técnica:** o índice da v1.0 guardava o tamanho antigo do texto do DoS e do OoE; agora os três estão com o tamanho exato.
-- 📦 O instalador aceita o jogo **original ou com a v1.0** instalada.
 
 ---
 
@@ -39,6 +47,8 @@ A tradução ocupa o **slot do idioma Espanhol** do jogo. Depois de instalar, ba
 | **Castlevania: Order of Ecclesia** | 1.517 | ✅ 100% |
 | **Castlevania: Dawn of Sorrow** | 1.015 | ✅ 100% |
 | **Castlevania: Portrait of Ruin** | 1.537 | ✅ 100% |
+| **Menu da coleção** (textos + imagens) | ~500 textos e 331 imagens | ✅ |
+| **Enciclopédia** (DoS, PoR, OoE) | ~2.500 nomes e descrições | ✅ 100% |
 
 Isso inclui, em cada jogo:
 
@@ -63,7 +73,7 @@ Cada jogo passou por uma **verificação byte a byte** no arquivo final: o texto
 | **Títulos das músicas** (sound test) | Preservam a identidade da trilha |
 | Nomes de pratos gourmet (Foie Gras, Penne Arrabiata...) | Nomes reais de culinária |
 | **Haunted Castle** e **Haunted Castle Revisited** | Jogos de ação arcade, praticamente sem texto |
-| **Menu/Museu da própria coleção** | O texto ali é *renderizado como imagem/animação* (formato Emote), não como tabela de texto editável — traduzir exigiria refazer gráficos e fontes, com alto risco e pouco retorno |
+| **Manuais e caixas digitalizados** (seção Extra) | São páginas escaneadas; ficam para uma versão futura |
 | Mensagens da **Nintendo Wi-Fi Connection** | Serviço desligado desde 2014; nunca aparecem |
 
 Ou seja: **99% do texto que você realmente vê jogando os três Castlevania de DS está em português.**
@@ -80,6 +90,7 @@ Este projeto envolveu **engenharia reversa** do empacotamento do motor **M2** us
 4. **Estratégia de sobrescrever o slot Espanhol** usando o Inglês como base (o que não fosse traduzido continuaria legível).
 5. Aplicação com *patch* **in-place** ou **relocação** quando o texto crescia além do espaço original.
 6. **Auditoria de integridade de _tokens_** (contagem de caixas de diálogo e marcadores) + **verificação end-to-end** relendo os arquivos do jogo.
+7. **Menu da coleção (v1.2):** textos dos arquivos PSB do launcher em todos os idiomas ocidentais, e as **imagens de texto** do menu (atlas `text_set`) redesenhadas em português, copiando cor e contorno do original.
 
 Foram **~4.000 frases** traduzidas e conferidas ao longo do processo.
 
@@ -87,7 +98,7 @@ Foram **~4.000 frases** traduzidas e conferidas ao longo do processo.
 
 ## 💾 Instalação
 
-> **Requisitos:** o jogo *Castlevania Dominus Collection* instalado pela **Steam**, na versão original (sem outros mods) **ou com a v1.0 desta tradução** — o instalador atualiza direto, sem precisar reverter antes. O instalador usa **Python 3** — no **Steam Deck / Linux** já vem instalado; no **Windows**, se não tiver, baixe em [python.org/downloads](https://www.python.org/downloads/) marcando *"Add Python to PATH"*.
+> **Requisitos:** o jogo *Castlevania Dominus Collection* instalado pela **Steam**, na versão original (sem outros mods) **ou com a v1.0/v1.1 desta tradução** — o instalador atualiza direto, sem precisar reverter antes. O instalador usa **Python 3** — no **Steam Deck / Linux** já vem instalado; no **Windows**, se não tiver, baixe em [python.org/downloads](https://www.python.org/downloads/) marcando *"Add Python to PATH"*.
 
 ### 🪟 Windows
 
@@ -95,7 +106,7 @@ Foram **~4.000 frases** traduzidas e conferidas ao longo do processo.
 2. **Feche o jogo.**
 3. Dê **duplo-clique** em `Instalar-Windows.bat`.
 4. Ele encontra a pasta do jogo sozinho, confere e aplica. *(Se não achar, arraste a pasta do jogo para a janela e pressione ENTER.)*
-5. Pronto! Abra o jogo → **European Version** → idioma **Español**.
+5. Pronto! Abra o jogo → **Versão Português BR** → idioma **Español**.
 
 ### 🎮 Steam Deck
 
@@ -107,7 +118,7 @@ Foram **~4.000 frases** traduzidas e conferidas ao longo do processo.
    python3 instalar.py
    ```
 4. Ele detecta o jogo no SSD **ou no cartão SD**, confere e aplica.
-5. Volte ao **Modo Jogo** → abra o jogo → **European Version** → **Español**.
+5. Volte ao **Modo Jogo** → abra o jogo → **Versão Português BR** → **Español**.
 
 O instalador **não duplica** o arquivo de 1,2 GB: ele altera apenas as partes necessárias e confere tudo por **SHA-1** antes e depois. Se algo não bater, ele **aborta sem estragar nada**.
 

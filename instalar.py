@@ -3,7 +3,7 @@
 """
 Instalador da traducao PT-BR de Castlevania: Dominus Collection.
 Funciona em Windows e Steam Deck / Linux (Proton). Requer apenas Python 3.
-Aplica os 3 jogos (Order of Ecclesia, Dawn of Sorrow, Portrait of Ruin).
+Aplica os 3 jogos (Order of Ecclesia, Dawn of Sorrow, Portrait of Ruin) e o menu da colecao.
 
 Uso:
     python instalar.py                 (detecta o Steam automaticamente)
@@ -161,8 +161,9 @@ def main():
     ok = apply(windata, pd)
     log()
     if ok:
-        log("*** CONCLUIDO! Abra o jogo, escolha a European Version e o")
-        log("    idioma ESPANOL (Espanol) para jogar em Portugues. ***")
+        log("*** CONCLUIDO! O menu da colecao ja abre em portugues.")
+        log("    Em cada jogo, escolha a 'Versao Portugues BR' e o idioma")
+        log("    ESPANOL (Espanol) para jogar em portugues. ***")
         log("Para reverter: Steam > Propriedades > Arquivos instalados >")
         log("               Verificar integridade dos arquivos.")
     else:

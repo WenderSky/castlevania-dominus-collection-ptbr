@@ -15,11 +15,19 @@ ERROS (typos, sentido um pouco diferente, espacamentos imperfeitos).
 Nao e um trabalho profissional/oficial. Achou um erro? Abra uma issue
 no GitHub que eu corrijo em versoes futuras.
 
-Versao: 1.1
+Versao: 1.2
 Traducao por: Wender_sky (Steam)
 Plataforma do jogo: Steam (PC e Steam Deck)
 
 ----------------------------------------------------------------
+ NOVIDADES DA v1.2
+----------------------------------------------------------------
+- Menu da colecao traduzido: abas, configuracoes, guia de botoes,
+  avisos, save, nomes das areas, conquistas e enciclopedia.
+- A "European Version" agora se chama "Versao Portugues BR".
+- Creditos da traducao na tela de titulo e no menu principal.
+- Atualiza direto do jogo original, da v1.0 ou da v1.1.
+
  NOVIDADES DA v1.1
 ----------------------------------------------------------------
 - Termos padronizados entre os tres jogos (mesmo termo = mesma
@@ -35,8 +43,9 @@ Plataforma do jogo: Steam (PC e Steam Deck)
  COMO A TRADUCAO FUNCIONA
 ----------------------------------------------------------------
 A traducao ocupa o lugar do idioma ESPANHOL do jogo. Depois de
-instalar, dentro do jogo escolha a "European Version" e o idioma
-ESPANOL (Espanol) -- o texto aparecera em portugues.
+instalar, o menu da colecao ja abre em portugues. Em cada jogo,
+escolha a "Versao Portugues BR" (antiga European Version) e o
+idioma ESPANOL (Espanol) -- o texto aparecera em portugues.
 
 Nomes de personagens, armas lendarias (ex.: Vampire Killer) e
 titulos das musicas ficam no original, de proposito.
@@ -46,7 +55,7 @@ titulos das musicas ficam no original, de proposito.
 ----------------------------------------------------------------
 - O jogo "Castlevania Dominus Collection" instalado pela Steam,
   na versao original (sem outras modificacoes) OU com a v1.0
-  desta traducao (o instalador atualiza direto).
+  ou v1.1 desta traducao (o instalador atualiza direto).
 - O instalador precisa do Python 3:
     * Steam Deck / Linux: ja vem instalado (python3).
     * Windows: se nao tiver, baixe em https://www.python.org/downloads/
@@ -59,7 +68,7 @@ titulos das musicas ficam no original, de proposito.
 2. De um duplo-clique em "Instalar-Windows.bat".
 3. Ele acha a pasta do jogo sozinho, faz a verificacao e aplica.
    (Se nao achar, arraste a pasta do jogo para a janela e ENTER.)
-4. Pronto! Abra o jogo, European Version, idioma Espanhol.
+4. Pronto! Abra o jogo, Versao Portugues BR, idioma Espanhol.
 
 ----------------------------------------------------------------
  COMO INSTALAR -- STEAM DECK
@@ -72,7 +81,7 @@ titulos das musicas ficam no original, de proposito.
        python3 instalar.py
    (ou:  sh Instalar-SteamDeck.sh )
 5. Ele detecta o jogo no SSD ou no cartao SD, verifica e aplica.
-6. Volte ao Modo Jogo. Abra o jogo, European Version, Espanhol.
+6. Volte ao Modo Jogo. Abra o jogo, Versao Portugues BR, Espanhol.
 
 ----------------------------------------------------------------
  COMO REVERTER (voltar ao original)
